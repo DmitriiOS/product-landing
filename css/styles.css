@@ -1,0 +1,496 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+a {
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    color: #cc0a0a;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+.top-menu p {
+    margin: 0 16px;
+}
+
+.top-menu {
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.company-info {
+    display: flex;
+}
+
+.company-title {
+    display: flex;
+    justify-content: right;
+}
+
+.company-name {
+    align-self: center;
+}
+
+.menu-titles {
+    width: 50%;
+    align-self: center;
+}
+
+.menu-titles a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.menu-titles a:hover {
+    color: #cc0a0a;
+}
+
+.red-round-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: #cc0a0a;
+}
+
+.big-red-round-logo {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    background-color: #cc0a0a;
+    margin: auto;
+}
+
+.big-name {
+    font-size: 30px;
+    line-height: 36px;
+    color: #666666;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.small-name {
+    font-size: 13px;
+    line-height: 19px;
+    color: #666666;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+.contacts {
+    border-left: 2px #cc0a0a solid;
+    align-self: center;
+}
+
+.phone-number {
+    font-size: 18px;
+    line-height: 25px;
+    color: #333333;
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+
+.nav-menu {
+    width: 1500px;
+    background-color: #f2f2f2;
+    margin: auto;
+    padding: 3px;
+}
+
+.nav-menu ul {
+    display: flex;
+    width: 30%;
+    list-style-type: none;
+}
+
+.main-content {
+    width: 1500px;
+    margin: auto;
+}
+
+.product-info {
+    border: 2px solid #f2f2f2;
+}
+
+.product-carousel {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.product-picture {
+    border-left: #f2f2f2 2px solid;
+    align-self: center;
+}
+
+.product-details {
+    background-color: #f2f2f2;
+    padding: 40px;
+}
+
+.price-and-order {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "A A A A A A   B B B B B B"
+    "C C C C C C   D D D D D D";
+    justify-items: center;
+}
+
+.pr-1 {
+    grid-area: A;
+    font-size: 24px;
+    color: #333333;
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+
+.pr-2 {
+    grid-area: B;
+    align-self: center;
+}
+
+.pr-3 {
+    grid-area: C;
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #cc0a0a;
+    color: white;
+    border: none;
+}
+
+.pr-4 {
+    grid-area: D;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 10% 55% 35%;
+}
+
+.characteristics {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "A A A A A A   A A A A A A"
+    "B B B B B B   C C C C C C"
+    "D D D D D D   D D D D D D";
+}
+
+.ch-1 {
+    grid-area: A;
+    margin-left: 40px;
+}
+
+.ch-2 {
+    grid-area: B;
+    flex-direction:column;
+}
+
+.ch-3 {
+    grid-area: C;
+    flex-direction:column;
+}
+
+.ch-4 {
+    grid-area: D;
+    margin-left: 40px;
+}
+
+.description-menu {
+    display: flex;
+    width: 50%;
+    list-style-type: none;
+}
+
+.product-description {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "A A A A   A A A B   B B B B"
+    "A A A A   A A A C   C C C C"
+    "D D D D   D D D D   D D D D";
+}
+
+.product-description ul {
+    flex-direction: column;
+    padding:0;
+}
+
+.desc-1 {
+    grid-area: A;
+}
+
+.desc-2 {
+    grid-area: B;
+}
+
+.desc-3 {
+    grid-area: C;
+}
+
+.desc-4 {
+    grid-area: D;
+}
+
+.desc-img {
+    float: left;
+    margin: 16px;
+}
+
+.tech-description li {
+    padding-bottom: 6px;
+}
+
+.tech-description li:before {
+    content: "- ";
+}
+
+.tech-details {
+    display: grid;
+    gap: 10px;
+    background-color: #f2f2f2;
+    padding: 16px;
+    grid-template-areas: 
+    "A A A A"
+    "B B C C";
+}
+
+.det-1 {
+    grid-area: A;
+    align-self:center;
+}
+
+.det-2 {
+    grid-area: B;
+}
+
+.det-3 {
+    grid-area: C;
+}
+
+.tech-params {
+    display: grid;
+    gap: 10px;
+    background-color: #f2f2f2;
+    padding: 16px;
+    grid-template-areas: 
+    "A A A A"
+    "B B C C";
+}
+
+.param-1 {
+    grid-area: A;
+    align-self:center;
+}
+
+.param-2 {
+    grid-area: B;
+}
+
+.param-3 {
+    grid-area: C;
+}
+
+.recommended-products {
+    background-color: #f2f2f2;
+    padding: 50px 100px 150px;
+    margin-top: 50px;
+}
+
+.recommendation-title {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+
+.control-buttons button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: white;
+    border-radius: 25px;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.back-btn {
+    color: #666666;
+}
+
+.forward-btn {
+    color: black;
+}
+
+.recommended-product {
+    width: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.recommended-product b, s {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.recommended-product s {
+    color: #666666;
+}
+
+.recommended-product-img {
+    width: 100%;
+}
+
+.label {
+    position: absolute;
+    color: white;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.sale {
+    background-color: #cc0a0a;
+}
+
+.hit {
+    background-color: orange;
+}
+
+.new {
+    background-color:mediumturquoise;
+}
+
+
+
+.text-center {
+    text-align: center;
+}
+
+.recommended-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount-offer {
+    background-color: #cc0a0a;
+    margin: -50px auto 50px;
+    width: 1100px;
+    padding: 20px 100px;
+    display: grid;
+    grid-template-areas: 
+    "A A A A   A A A A   C C C C"
+    "B B B B   B B B B   C C C C";
+}
+
+.discount-question {
+    grid-area: A;
+    font-size: 1.5em;
+    color: white;
+}
+
+.discount-desc {
+    grid-area: B;
+    color: white;  
+    margin-top: 0px;  
+}
+
+.discount-button {
+    grid-area: C;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+    color: #cc0a0a;
+    border: none;
+    font-weight: bolder;
+    align-self: center;
+}
+
+.footer {
+    display: grid;
+    grid-template-areas: 
+    "A A A   D D D   G G G   J J   M"
+    "B B B   E E E   H H H   K K   N"
+    "C C C   F F F   I I I   L L   O";
+    margin-bottom: 100px;
+    padding: 0px 200px;
+    justify-items: start;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.ftr-1 {
+    grid-area: A;
+}
+.ftr-2 {
+    grid-area: B;
+}
+.ftr-3 {
+    grid-area: C;
+}
+.ftr-4 {
+    grid-area: D;
+}
+.ftr-5 {
+    grid-area: E;
+}
+.ftr-6 {
+    grid-area: F;
+}
+.ftr-7 {
+    grid-area: G;
+}
+.ftr-8 {
+    grid-area: H;
+}
+.ftr-9 {
+    grid-area: I;
+}
+.ftr-10 {
+    grid-area: J;
+}
+.ftr-11 {
+    grid-area: K;
+}
+.ftr-12 {
+    grid-area: L;
+}
+.ftr-13 {
+    grid-area: M;
+}
+.ftr-14 {
+    grid-area: N;
+}
+.ftr-15 {
+    grid-area: O;
+}
+
+.font-bolder {
+    font-weight: bolder;
+}
+.font-gray {
+    color: #666;
+}
+.round-gray {
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+    background-color: #666;
+}
